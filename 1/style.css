@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'UniSans-Trial';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('UniSans-Trial'),
+    url('./fonts/UniSans-Trial.woff2') format('woff2'),
+    url('.//fonts/UniSans-Trial.woff') format('woff'),
+    url('.//fonts/UniSans-Trial.ttf') format('truetype');
+}
+
+.page {
+  margin: 0;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.about-us {
+  box-sizing: border-box;
+  width: 78.65%;
+  max-width: 1510px;
+  margin: 0 auto;
+  /* min-width: 100%; */
+}
+
+.about-us__title {
+  margin-bottom: 85px;
+  margin-top: 0;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 2.08;
+  text-transform: uppercase;
+  font-family: 'UniSans-Trial', Helvetica, sans-serif;
+  color: #565655;
+}
+
+.about-us__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px 47px;
+  padding: 0;
+  list-style: none;
+}
+
+.about-us__item {
+  position: relative;
+  box-sizing: border-box;
+  width: max(366px, calc(50% - 23.5px));
+  padding-left: 89px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.32;
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+.about-us__item::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 78px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.about-us__item:nth-child(1):after {
+  left: -10px;
+  top: -5px;
+  background-image: url(images/about_us_1.svg);
+}
+
+.about-us__item:nth-child(2):after {
+  background-image: url(images/about_us_2.svg);
+}
+
+.about-us__item:nth-child(3):after {
+  top: 10px;
+  background-image: url(images/about_us_3.svg);
+}
+
+.about-us__item:nth-child(4):after {
+  top: 17px;
+  left: -4px;
+  background-image: url(images/about_us_4.svg);
+}
