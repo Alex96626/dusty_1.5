@@ -1,18 +1,18 @@
 .page {
   margin: 0;
   font-family: 'Montserrat', Helvetica, sans-serif;
-  font-weight: 400;
 }
 
 .about {
-  padding: 70px calc(50% - 680px) 40px;
+  min-width: 1050px;
+  padding: 70px max(calc(50% - 680px), 20px) 40px;
   background: #f3f3f3;
 }
 
 .about__header {
   display: flex;
   align-items: center;
-  gap:70px 145px;
+  gap: 70px 145px;
 }
 
 .about__title {
@@ -30,6 +30,11 @@
   justify-content: space-between;
 }
 
+.about__title,
+.about__wrapper {
+  flex: 1 100%;
+}
+
 .about__description {
   margin: 0;
   color: #151515;
@@ -42,10 +47,11 @@
 }
 
 .performance__title {
+  margin: 0;
   text-align: center;
   color: #868686;
   font-size: 18px;
-  line-height: 1.5%;
+  line-height: 1.5;
   letter-spacing: 9px;
   text-transform: uppercase;
 }
@@ -55,14 +61,13 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 90px;
-  margin: 0;
-  margin-top: 70px;
+  margin: 70px 0 0;
   padding: 0;
   list-style-type: none;
 }
 
 .performance__item {
-    box-sizing: border-box;
+  box-sizing: border-box;
   flex: 1;
   max-width: 380px;
   min-width: 320px;
